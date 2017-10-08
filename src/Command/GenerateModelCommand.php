@@ -48,6 +48,14 @@ class GenerateModelCommand extends Command
     }
 
     /**
+     * Add support for Laravel 5.5
+     */
+    public function handle()
+    {
+        $this->fire();
+    }
+
+    /**
      * @return Config
      */
     protected function createConfig()
